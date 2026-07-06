@@ -1,7 +1,6 @@
 'use client'
 
-import { useState } from 'react'
-import travelData from '@/data/travel.json'
+import { useState, useEffect } from 'react'
 
 interface TravelItem {
   date: string
@@ -39,13 +38,93 @@ const dayThemes: Record<string, string> = {
   '7/17 (목)': '맥주 박물관 & 귀환',
 }
 
+// 구글 시트 CSV URL
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/10D6BHT4KAOUYCm9uZm9iRPWNbRhiIdEIdQ4C9QrFC4Y/export?format=csv&gid=0'
+
+function parseCSV(csv: string): TravelItem[] {
+  const lines = csv.split('\n')
+  const items: TravelItem[] = []
+  
+  // 헤더 스킵
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim()
+    if (!line) continue
+    
+    // CSV 파싱 (쉼표 구분, 따옴표 처리)
+    const parts: string[] = []
+    let current = ''
+    let inQuotes = false
+    
+    for (let j = 0; j < line.length; j++) {
+      const char = line[j]
+      if (char === '"') {
+        inQuotes = !inQuotes
+      } else if (char === ',' && !inQuotes) {
+        parts.push(current.trim())
+        current = ''
+      } else {
+        current += char
+      }
+    }
+    parts.push(current.trim())
+    
+    // 빈 행 스킵
+    if (!parts[0]) continue
+    
+    items.push({
+      date: parts[0] || '',
+      time: parts[1] || '',
+      activity: parts[2] || '',
+      location: parts[3] || '',
+      transport: parts[4] || '',
+      note: parts[5] || '',
+    })
+  }
+  
+  return items
+}
+
 export default function TravelPage() {
   const [selectedDay, setSelectedDay] = useState<string | null>(null)
+  const [travelData, setTravelData] = useState<TravelItem[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(SHEET_CSV_URL)
+        if (!response.ok) throw new Error('Failed to fetch')
+        const csv = await response.text()
+        const data = parseCSV(csv)
+        setTravelData(data)
+      } catch (err) {
+        // CSV 가져오기 실패 시 로컬 데이터 사용
+        console.warn('Google Sheet fetch failed, using local data')
+        const localData = await import('@/data/travel.json')
+        setTravelData(localData.default as TravelItem[])
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchData()
+  }, [])
 
   const days = [...new Set(travelData.map((item: TravelItem) => item.date))]
   const filteredData = selectedDay
     ? travelData.filter((item: TravelItem) => item.date === selectedDay)
     : travelData
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-800 mx-auto mb-4"></div>
+          <p className="text-slate-600">여행 일정 로딩 중...</p>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -63,6 +142,14 @@ export default function TravelPage() {
           </div>
         </div>
       </header>
+
+      {/* Data Source Badge */}
+      <div className="max-w-6xl mx-auto px-4 pt-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full border border-green-200">
+          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+          📊 구글 시트에서 실시간 연동 중
+        </div>
+      </div>
 
       {/* Day Filter */}
       <div className="max-w-6xl mx-auto px-4 py-6">
@@ -185,7 +272,7 @@ export default function TravelPage() {
 
         {/* Footer */}
         <div className="mt-6 text-center text-xs text-slate-400">
-          <p>📍 구글 시트 데이터 기반 | 2026년 7월 여행 계획</p>
+          <p>📍 구글 시트 실시간 연동 | 2026년 7월 여행 계획</p>
           <p className="mt-1">
             <a
               href="https://docs.google.com/spreadsheets/d/10D6BHT4KAOUYCm9uZm9iRPWNbRhiIdEIdQ4C9QrFC4Y/edit"

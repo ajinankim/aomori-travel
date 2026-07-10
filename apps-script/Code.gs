@@ -36,7 +36,7 @@ function doGet(e) {
         date = String(date);
       }
 
-      return {
+      const result = {
         date: date,
         time: time,
         activity: String(row[2] || ''),
@@ -45,6 +45,13 @@ function doGet(e) {
         note: String(row[5] || ''),
         map: String(row[6] || '')
       };
+
+      // alternatives 컬럼 (H열) 있으면 추가
+      if (row[7]) {
+        result.alternatives = String(row[7]).split('\n').filter(s => s.trim());
+      }
+
+      return result;
     });
   
   return ContentService

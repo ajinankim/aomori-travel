@@ -250,6 +250,16 @@ export default function TravelPage() {
               📊 원본 구글 시트 보기 →
             </a>
           </p>
+          <p className="mt-1">
+            <a
+              href="https://aomori-travel.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              🗾 앱 링크 →
+            </a>
+          </p>
         </div>
       </div>
     </div>

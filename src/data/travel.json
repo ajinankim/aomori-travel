@@ -262,6 +262,15 @@
   },
   {
     "date": "7/15 (수)",
+    "time": "18:00~19:00",
+    "activity": "하코다테 봉행소",
+    "location": "하코다테 봉행소",
+    "transport": "도보",
+    "note": "",
+    "map": "https://maps.app.goo.gl/Uken3MQu2fTDJdrx9"
+  },
+  {
+    "date": "7/15 (수)",
     "time": "저녁",
     "activity": "자유식사",
     "location": "하코다테 시내",
@@ -286,15 +295,6 @@
     "transport": "",
     "note": "",
     "map": ""
-  },
-  {
-    "date": "7/16 (목)",
-    "time": "14:00~15:00",
-    "activity": "하코다테 봉행소",
-    "location": "하코다테 봉행소",
-    "transport": "도보",
-    "note": "",
-    "map": "https://maps.app.goo.gl/Uken3MQu2fTDJdrx9"
   },
   {
     "date": "7/16 (목)",

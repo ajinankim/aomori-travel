@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server'
 
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwrqIzGkMA50ArXfsKrz-EJqwWTO8MmzZ2v5oXNGla2SacdczT8aEDzWiew5k1-lkP3Og/exec'
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx56yotCGX9ArKJ9uP9wih-lfysQ1bRu7HipsLGFYv_V6hR71WD83RsoKhq5M1QrPmzCQ/exec'
 
 export async function GET() {
   try {
-    const response = await fetch(APPS_SCRIPT_URL, {
-      next: { revalidate: 300 }
+    const response = await fetch(APPS_SCRIPT_URL + '?t=' + Date.now(), {
+      cache: 'no-store'
     })
 
     if (!response.ok) {

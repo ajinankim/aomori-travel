@@ -14,14 +14,38 @@ function doGet(e) {
   // JSON 데이터로 변환
   const jsonData = data
     .filter(row => row[0] !== '' && row[0] !== null) // 빈 행 제거
-    .map(row => ({
-      date: row[0] || '',
-      time: row[1] || '',
-      activity: row[2] || '',
-      location: row[3] || '',
-      transport: row[4] || '',
-      note: row[5] || ''
-    }));
+    .map(row => {
+      // 시간 필드가 Date 객체이면 문자열로 변환
+      let time = row[1] || '';
+      if (time instanceof Date) {
+        const h = String(time.getHours()).padStart(2, '0');
+        const m = String(time.getMinutes()).padStart(2, '0');
+        time = h + ':' + m;
+      } else {
+        time = String(time);
+      }
+
+      let date = row[0] || '';
+      if (date instanceof Date) {
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+        const dayOfWeek = dayNames[date.getDay()];
+        date = month + '/' + day + ' (' + dayOfWeek + ')';
+      } else {
+        date = String(date);
+      }
+
+      return {
+        date: date,
+        time: time,
+        activity: String(row[2] || ''),
+        location: String(row[3] || ''),
+        transport: String(row[4] || ''),
+        note: String(row[5] || ''),
+        map: String(row[6] || '')
+      };
+    });
   
   return ContentService
     .createTextOutput(JSON.stringify(jsonData))

@@ -9,33 +9,35 @@ interface TravelItem {
   location: string
   transport: string
   note: string
+  map?: string
+  alternatives?: string[]
 }
 
 const dayColors: Record<string, { bg: string; border: string; text: string }> = {
-  '7/12 (토)': { bg: 'bg-rose-50', border: 'border-rose-300', text: 'text-rose-700' },
-  '7/13 (일)': { bg: 'bg-amber-50', border: 'border-amber-300', text: 'text-amber-700' },
-  '7/14 (월)': { bg: 'bg-sky-50', border: 'border-sky-300', text: 'text-sky-700' },
-  '7/15 (화)': { bg: 'bg-emerald-50', border: 'border-emerald-300', text: 'text-emerald-700' },
-  '7/16 (수)': { bg: 'bg-violet-50', border: 'border-violet-300', text: 'text-violet-700' },
-  '7/17 (목)': { bg: 'bg-pink-50', border: 'border-pink-300', text: 'text-pink-700' },
+  '7/12 (일)': { bg: 'bg-rose-50', border: 'border-rose-300', text: 'text-rose-700' },
+  '7/13 (월)': { bg: 'bg-amber-50', border: 'border-amber-300', text: 'text-amber-700' },
+  '7/14 (화)': { bg: 'bg-sky-50', border: 'border-sky-300', text: 'text-sky-700' },
+  '7/15 (수)': { bg: 'bg-emerald-50', border: 'border-emerald-300', text: 'text-emerald-700' },
+  '7/16 (목)': { bg: 'bg-violet-50', border: 'border-violet-300', text: 'text-violet-700' },
+  '7/17 (금)': { bg: 'bg-pink-50', border: 'border-pink-300', text: 'text-pink-700' },
 }
 
 const dayIcons: Record<string, string> = {
-  '7/12 (토)': '🛬',
-  '7/13 (일)': '🏯',
-  '7/14 (월)': '⛴️',
-  '7/15 (화)': '🏰',
-  '7/16 (수)': '🚄',
-  '7/17 (목)': '✈️',
+  '7/12 (일)': '🛬',
+  '7/13 (월)': '🏯',
+  '7/14 (화)': '⛴️',
+  '7/15 (수)': '🏰',
+  '7/16 (목)': '🚄',
+  '7/17 (금)': '✈️',
 }
 
 const dayThemes: Record<string, string> = {
-  '7/12 (토)': '아오모리 진입 & 고대-현대 문화',
-  '7/13 (일)': '히로사키번의 역사적 유산',
-  '7/14 (월)': '쓰가루 해협 횡단 & 하코다테 야경',
-  '7/15 (화)': '하코다테 탐방 & 미식',
-  '7/16 (수)': '삿포로 이동 & 수프 카레',
-  '7/17 (목)': '맥주 박물관 & 귀환',
+  '7/12 (일)': '아오모리 진입 & 네푸타·해양 문화',
+  '7/13 (월)': '히로사키번의 역사적 유산',
+  '7/14 (화)': '쓰가루 해협 횡단 & 하코다테 야경',
+  '7/15 (수)': '하코다테 탐방 & 미식',
+  '7/16 (목)': '삿포로 이동 & 수프 카레',
+  '7/17 (금)': '맥주 박물관 & 귀환',
 }
 
 export default function TravelPage() {
@@ -184,6 +186,25 @@ export default function TravelPage() {
                           )}
                           {item.note && (
                             <span className="text-xs text-slate-400 max-w-xs">{item.note}</span>
+                          )}
+                          {item.alternatives && item.alternatives.length > 0 && (
+                            <div className="mt-1">
+                              {item.alternatives.map((alt, i) => (
+                                <span key={i} className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded-full border border-amber-200">
+                                  🔄 대안: {alt}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          {item.map && (
+                            <a
+                              href={item.map}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-lg border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 transition-all"
+                            >
+                              🗺️ 지도
+                            </a>
                           )}
                         </div>
                       </div>

@@ -10,7 +10,6 @@ interface TravelItem {
   transport: string
   note: string
   map?: string
-  alternatives?: string[]
 }
 
 const dayColors: Record<string, { bg: string; border: string; text: string }> = {
@@ -186,15 +185,6 @@ export default function TravelPage() {
                           )}
                           {item.note && (
                             <span className="text-xs text-slate-400 max-w-xs">{item.note}</span>
-                          )}
-                          {item.alternatives && item.alternatives.length > 0 && (
-                            <div className="mt-1">
-                              {item.alternatives.map((alt, i) => (
-                                <span key={i} className="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded-full border border-amber-200">
-                                  🔄 대안: {alt}
-                                </span>
-                              ))}
-                            </div>
                           )}
                           {item.map && (
                             <a

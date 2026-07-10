@@ -218,20 +218,38 @@
   {
     "date": "7/15 (수)",
     "time": "06:30~10:00",
-    "activity": "라비스타 하코다테 베이 호텔 조식",
+    "activity": "호텔 조식 (아침)",
     "location": "라비스타 하코다테 베이",
-    "transport": "자가제조 해산물 덮밥",
-    "note": "7년 연속 홋카이도 최고 조식",
-    "map": "https://maps.app.goo.gl/lavista"
+    "transport": "",
+    "note": "자가제조 해산물 덮밥, 7년 연속 홋카이도 최고 조식",
+    "map": "https://www.google.com/maps/search/Lavista+Hakodate+Bay/@41.770,140.729,17z"
   },
   {
     "date": "7/15 (수)",
-    "time": "오전~오후",
-    "activity": "고료카쿠 요새",
-    "location": "고료카쿠",
-    "transport": "시영 전차 1일권 800엔",
-    "note": "별 모양 요새, 타워 1,200엔",
-    "map": "https://maps.app.goo.gl/goryokaku"
+    "time": "10:30~12:00",
+    "activity": "하코다테 아침시장 (점심)",
+    "location": "하코다테 아침시장",
+    "transport": "도보",
+    "note": "오전 영업 위주, 싱싱한 해산물",
+    "map": "https://www.google.com/maps/search/Hakodate+Morning+Market/@41.773,140.725,17z"
+  },
+  {
+    "date": "7/15 (수)",
+    "time": "13:00~14:30",
+    "activity": "미도리노시마 공원",
+    "location": "미도리노시마 공원",
+    "transport": "도보",
+    "note": "하코다테항 전망",
+    "map": "https://www.google.com/maps/search/Minami+North+Shore+Park+Hakodate/@41.760,140.710,17z"
+  },
+  {
+    "date": "7/15 (수)",
+    "time": "15:00~16:00",
+    "activity": "구 하코다테구 공회장",
+    "location": "구 하코다테구 공회장",
+    "transport": "도보",
+    "note": "시렌가쿠(십연각) 건축 양식",
+    "map": "https://www.google.com/maps/search/Old+Hakodate+Public+Hall/@41.764,140.701,17z"
   },
   {
     "date": "7/15 (수)",

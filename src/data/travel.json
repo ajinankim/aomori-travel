@@ -163,12 +163,39 @@
   },
   {
     "date": "7/14 (화)",
+    "time": "12:00~13:00",
+    "activity": "부타동 (점심)",
+    "location": "하코다테 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/14 (화)",
     "time": "오후",
     "activity": "모토마치 지구 산책",
     "location": "하코다테 모토마치",
     "transport": "도보",
     "note": "구 영국 영사관, 정교회, 공회당",
     "map": "https://maps.app.goo.gl/motomachi"
+  },
+  {
+    "date": "7/14 (화)",
+    "time": "16:00~17:00",
+    "activity": "고료카쿠 타워",
+    "location": "고료카쿠",
+    "transport": "도보",
+    "note": "별 모양 요새, 타워 전망대",
+    "map": "https://www.google.com/maps/search/Goryokaku+Tower/@41.796,140.757,17z"
+  },
+  {
+    "date": "7/14 (화)",
+    "time": "18:00~19:00",
+    "activity": "우니동 (저녁)",
+    "location": "하코다테 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
   },
   {
     "date": "7/14 (화)",
@@ -181,12 +208,12 @@
   },
   {
     "date": "7/14 (화)",
-    "time": "야경",
-    "activity": "하코다테산 로프웨이",
+    "time": "20:00~21:30",
+    "activity": "하코다테산 전망대",
     "location": "하코다테산",
     "transport": "왕복 1,800엔",
-    "note": "세계 3대 야경, 디지털 티켓 추천",
-    "map": "https://maps.app.goo.gl/hakodatemt"
+    "note": "세계 3대 야경",
+    "map": "https://www.google.com/maps/search/Hakodate+Ropeway/@41.759,140.699,17z"
   },
   {
     "date": "7/15 (수)",

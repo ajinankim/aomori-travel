@@ -2,34 +2,34 @@
   {
     "date": "7/12 (일)",
     "time": "11:35",
-    "activity": "아오모리 공항 도착",
+    "activity": "인천공항 ➡️ 아오모리 공항",
     "location": "아오모리 공항",
     "transport": "대한항공 KE2193 (ICN-AOJ)",
-    "note": "입국 심사 후 12:30 버스 출발",
-    "map": "https://maps.app.goo.gl/aoj"
+    "note": "",
+    "map": ""
   },
   {
     "date": "7/12 (일)",
     "time": "12:30~13:05",
-    "activity": "아오모리역 이동",
-    "location": "공항→아오모리역",
+    "activity": "공항 ➡️ 호텔 (짐 맡기기)",
+    "location": "ART HOTEL Aomori",
     "transport": "JR 버스 도호쿠 / 750엔",
     "note": "아오모리역 ②번 버스 정류장",
-    "map": "https://maps.app.goo.gl/4EdsBn76K6sXRC557"
+    "map": "https://www.google.com/maps/search/ART+HOTEL+Aomori/@40.828,140.718,17z"
   },
   {
     "date": "7/12 (일)",
     "time": "13:20~14:30",
-    "activity": "후루카와 시장 (놋케돈)",
+    "activity": "점심 : 놋케동",
     "location": "후루카와 생선시장",
-    "transport": "도보 / 무료",
+    "transport": "도보",
     "note": "식권 10장 1,300엔, 16시 마감",
     "map": "https://maps.app.goo.gl/furukawa"
   },
   {
     "date": "7/12 (일)",
     "time": "14:40~15:40",
-    "activity": "ねぶたの家 ワ・ラッセ (네부타 박물관)",
+    "activity": "네부타의 집 와랏세 박물관",
     "location": "아오모리 베이 에어리어",
     "transport": "도보 / 약 15분",
     "note": "대인 620엔, 대형 네푸타 상설 전시",
@@ -38,52 +38,52 @@
   {
     "date": "7/12 (일)",
     "time": "16:00~17:00",
-    "activity": "八甲田丸 (하코다테 해협 기념선박)",
-    "location": "아오모리항",
-    "transport": "도보 / 약 5분",
-    "note": "대인 510엔, 19시 마감(하계)",
-    "map": "https://maps.app.goo.gl/hakkodamaru"
-  },
-  {
-    "date": "7/12 (일)",
-    "time": "17:15~18:30",
-    "activity": "산나이 마루야마 유적",
-    "location": "아오모리 시내",
-    "transport": "도보 / 약 10분",
-    "note": "세계유산, 18시 마감",
-    "map": "https://maps.app.goo.gl/sannai"
+    "activity": "A-factory 기념품",
+    "location": "아오모리 베이 에어리어",
+    "transport": "도보",
+    "note": "애플 제품, 네푸타 기념품",
+    "map": ""
   },
   {
     "date": "7/12 (일)",
     "time": "저녁",
-    "activity": "Kawayoshi (카와요시)",
-    "location": "카와요시",
+    "activity": "저녁 : 장어덮밥 / 텐동",
+    "location": "아오모리 시내",
     "transport": "도보",
     "note": "",
-    "map": "https://maps.app.goo.gl/TXiVKZzAQskigcqe7"
-  },
-  {
-    "date": "7/12 (일)",
-    "time": "저녁",
-    "activity": "아지노 삿포로 오오니시 (미소 카레 우유 라멘) (대안)",
-    "location": "아지노 삿포로 오오니시",
-    "transport": "도보 / 아오모리역에서 8분",
-    "note": "11~18시 영업, 재료소진 시 조기마감",
-    "map": "https://maps.app.goo.gl/ramen"
+    "map": ""
   },
   {
     "date": "7/12 (일)",
     "time": "야간",
-    "activity": "아오모리역 주변 산책",
-    "location": "아오모리역",
+    "activity": "바닷가 산책",
+    "location": "아오모리 베이",
     "transport": "도보",
-    "note": "네부타 광장, 아오모리 베이 브릿지 야경",
+    "note": "아오모리 베이 브릿지 야경",
+    "map": ""
+  },
+  {
+    "date": "7/12 (일)",
+    "time": "숙소",
+    "activity": "호텔 체크인",
+    "location": "ART HOTEL Aomori",
+    "transport": "",
+    "note": "₩483,622 (2박) / 체크아웃 7/14",
+    "map": "https://www.google.com/maps/search/ART+HOTEL+Aomori/@40.828,140.718,17z"
+  },
+  {
+    "date": "7/13 (월)",
+    "time": "아침",
+    "activity": "호텔 조식",
+    "location": "ART HOTEL Aomori",
+    "transport": "",
+    "note": "",
     "map": ""
   },
   {
     "date": "7/13 (월)",
     "time": "09:04~09:38",
-    "activity": "아오모리역 출발 → 히로사키역",
+    "activity": "아오모리역 ➡️ 히로사키역 (JR 이용)",
     "location": "아오모리역 → 히로사키역",
     "transport": "JR 오우 본선",
     "note": "약 34분",
@@ -91,26 +91,8 @@
   },
   {
     "date": "7/13 (월)",
-    "time": "9:11",
-    "activity": "아오모리역 출발",
-    "location": "아오모리역",
-    "transport": "JR 오우 본선 / 600~850엔",
-    "note": "약 54분 소요",
-    "map": ""
-  },
-  {
-    "date": "7/13 (월)",
-    "time": "10:00~",
-    "activity": "히로사키성 & 공원 관람",
-    "location": "히로사키 공원",
-    "transport": "100엔 순환버스",
-    "note": "콤보 티켓 520엔",
-    "map": "https://maps.app.goo.gl/hirosaki"
-  },
-  {
-    "date": "7/13 (월)",
-    "time": "15:00~15:30",
-    "activity": "사과 파이 (간식)",
+    "time": "점심",
+    "activity": "점심 : 돈까스 / 라멘",
     "location": "히로사키 시내",
     "transport": "도보",
     "note": "",
@@ -118,17 +100,17 @@
   },
   {
     "date": "7/13 (월)",
-    "time": "18:00~",
-    "activity": "초밥 / 이자카야 (저녁)",
-    "location": "아오모리 시내",
+    "time": "13:00~15:00",
+    "activity": "히로사키 성 관람 & 공원 산책",
+    "location": "히로사키 공원",
     "transport": "도보",
-    "note": "",
-    "map": ""
+    "note": "콤보 티켓 520엔",
+    "map": "https://maps.app.goo.gl/hirosaki"
   },
   {
     "date": "7/13 (월)",
-    "time": "오후",
-    "activity": "쓰가루 네푸타 무라",
+    "time": "15:00~16:30",
+    "activity": "쓰가루번 네푸타 무라 관람",
     "location": "히로사키 공원 인접",
     "transport": "도보",
     "note": "네푸타 등불 전시 & 샤미센 공연",
@@ -136,7 +118,7 @@
   },
   {
     "date": "7/13 (월)",
-    "time": "16~17시",
+    "time": "17:00~18:00",
     "activity": "아오모리 복귀",
     "location": "히로사키→아오모리",
     "transport": "JR 오우 본선",
@@ -144,27 +126,54 @@
     "map": ""
   },
   {
+    "date": "7/13 (월)",
+    "time": "18:00~18:30",
+    "activity": "간식 : 사과 파이",
+    "location": "아오모리 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/13 (월)",
+    "time": "저녁",
+    "activity": "저녁 : 초밥 / 이자카야",
+    "location": "아오모리 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/14 (화)",
+    "time": "아침",
+    "activity": "호텔 조식",
+    "location": "ART HOTEL Aomori",
+    "transport": "",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/14 (화)",
+    "time": "체크아웃",
+    "activity": "체크 아웃",
+    "location": "ART HOTEL Aomori",
+    "transport": "",
+    "note": "",
+    "map": ""
+  },
+  {
     "date": "7/14 (화)",
     "time": "09:51~10:53",
-    "activity": "신아오모리역 출발 → 신하코다테호쿠토",
-    "location": "신아오모리역 → 신하코다테호쿠토",
+    "activity": "신아오모리역 ➡️ 신하코다테호쿠토역 (신칸센)",
+    "location": "신아오모리역 → 신하코다테호쿠토역",
     "transport": "신칸센 하야부사 1호 / 직행 / 76,152원",
     "note": "약 1시간 2분",
     "map": ""
   },
   {
     "date": "7/14 (화)",
-    "time": "~10:00",
-    "activity": "신하코다테호쿠토역 도착",
-    "location": "신하코다테호쿠토역",
-    "transport": "하코다테 라이너 환승",
-    "note": "",
-    "map": ""
-  },
-  {
-    "date": "7/14 (화)",
-    "time": "12:00~13:00",
-    "activity": "부타동 (점심)",
+    "time": "점심",
+    "activity": "점심 : 부타동 / 시오라멘",
     "location": "하코다테 시내",
     "transport": "도보",
     "note": "",
@@ -172,39 +181,21 @@
   },
   {
     "date": "7/14 (화)",
-    "time": "오후",
-    "activity": "모토마치 지구 산책",
-    "location": "하코다테 모토마치",
-    "transport": "도보",
-    "note": "구 영국 영사관, 정교회, 공회당",
-    "map": "https://maps.app.goo.gl/motomachi"
-  },
-  {
-    "date": "7/14 (화)",
-    "time": "16:00~17:00",
+    "time": "14:00~15:30",
     "activity": "고료카쿠 타워",
     "location": "고료카쿠",
     "transport": "도보",
     "note": "별 모양 요새, 타워 전망대",
-    "map": "https://www.google.com/maps/search/Goryokaku+Tower/@41.796,140.757,17z"
-  },
-  {
-    "date": "7/14 (화)",
-    "time": "18:00~19:00",
-    "activity": "우니동 (저녁)",
-    "location": "하코다테 시내",
-    "transport": "도보",
-    "note": "",
-    "map": ""
+    "map": "https://maps.app.goo.gl/goryokaku"
   },
   {
     "date": "7/14 (화)",
     "time": "저녁",
-    "activity": "럭키 삐에로",
+    "activity": "저녁 : 우니동 / 럭키삐에로 햄버거",
     "location": "하코다테 시내",
     "transport": "도보",
-    "note": "차이니즈 치킨 버거 추천, 23~24시 마감",
-    "map": "https://maps.app.goo.gl/luckypiero"
+    "note": "",
+    "map": ""
   },
   {
     "date": "7/14 (화)",
@@ -213,29 +204,38 @@
     "location": "하코다테산",
     "transport": "왕복 1,800엔",
     "note": "세계 3대 야경",
-    "map": "https://www.google.com/maps/search/Hakodate+Ropeway/@41.759,140.699,17z"
+    "map": "https://maps.app.goo.gl/hakodatemt"
   },
   {
     "date": "7/15 (수)",
-    "time": "06:30~10:00",
-    "activity": "호텔 조식 (아침)",
+    "time": "아침",
+    "activity": "호텔 조식",
     "location": "라비스타 하코다테 베이",
     "transport": "",
-    "note": "자가제조 해산물 덮밥, 7년 연속 홋카이도 최고 조식",
-    "map": "https://www.google.com/maps/search/Lavista+Hakodate+Bay/@41.770,140.729,17z"
+    "note": "자가제조 해산물 덮밥",
+    "map": "https://maps.app.goo.gl/lavista"
   },
   {
     "date": "7/15 (수)",
-    "time": "10:30~12:00",
-    "activity": "하코다테 아침시장 (점심)",
+    "time": "점심",
+    "activity": "점심 : 하코다테 아침시장",
     "location": "하코다테 아침시장",
     "transport": "도보",
     "note": "오전 영업 위주, 싱싱한 해산물",
-    "map": "https://www.google.com/maps/search/Hakodate+Morning+Market/@41.773,140.725,17z"
+    "map": "https://maps.app.goo.gl/hakomachi"
   },
   {
     "date": "7/15 (수)",
-    "time": "13:00~14:30",
+    "time": "13:00~14:00",
+    "activity": "카네모리 아카렌가 창고",
+    "location": "카네모리 아카렌가 창고",
+    "transport": "도보",
+    "note": "근대 건축, 기념품숍",
+    "map": ""
+  },
+  {
+    "date": "7/15 (수)",
+    "time": "14:30~15:30",
     "activity": "미도리노시마 공원",
     "location": "미도리노시마 공원",
     "transport": "도보",
@@ -244,7 +244,16 @@
   },
   {
     "date": "7/15 (수)",
-    "time": "15:00~16:00",
+    "time": "15:30~16:00",
+    "activity": "간식 : 카페",
+    "location": "하코다테 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/15 (수)",
+    "time": "16:00~17:00",
     "activity": "구 하코다테구 공회장",
     "location": "구 하코다테구 공회장",
     "transport": "도보",
@@ -253,27 +262,36 @@
   },
   {
     "date": "7/15 (수)",
-    "time": "16:30~17:30",
-    "activity": "다치마치 곶 산책",
-    "location": "다치마치 곶",
+    "time": "17:00~17:30",
+    "activity": "하치만자카",
+    "location": "하치만자카",
     "transport": "도보",
-    "note": "",
-    "map": "https://maps.app.goo.gl/BcdVRtWQhEhiZ1ut6"
-  },
-  {
-    "date": "7/15 (수)",
-    "time": "18:00~19:00",
-    "activity": "하코다테 봉행소",
-    "location": "하코다테 봉행소",
-    "transport": "도보",
-    "note": "",
-    "map": "https://maps.app.goo.gl/Uken3MQu2fTDJdrx9"
+    "note": "하코다테항 전망 포인트",
+    "map": ""
   },
   {
     "date": "7/15 (수)",
     "time": "저녁",
-    "activity": "자유식사",
+    "activity": "저녁 : 오코노미야끼",
     "location": "하코다테 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/16 (목)",
+    "time": "아침",
+    "activity": "호텔 조식",
+    "location": "라비스타 하코다테 베이",
+    "transport": "",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/16 (목)",
+    "time": "체크아웃",
+    "activity": "체크아웃",
+    "location": "라비스타 하코다테 베이",
     "transport": "",
     "note": "",
     "map": ""
@@ -281,64 +299,28 @@
   {
     "date": "7/16 (목)",
     "time": "09:15~12:41",
-    "activity": "신하코다테호쿠토역 출발 → 삿포로역",
-    "location": "신하코다테호쿠토역 → 삿포로역",
+    "activity": "하코다테역 ➡️ 삿포로역 (호쿠토 특급)",
+    "location": "하코다테역 → 삿포로역",
     "transport": "특급 호쿠토 5호 / 직행 / 94,964원",
     "note": "약 3시간 26분",
     "map": ""
   },
   {
     "date": "7/16 (목)",
-    "time": "12:41/14:01",
-    "activity": "삿포로역 도착",
-    "location": "삿포로역",
-    "transport": "",
+    "time": "점심",
+    "activity": "점심 : 회전초밥",
+    "location": "삿포로 시내",
+    "transport": "도보",
     "note": "",
     "map": ""
   },
   {
     "date": "7/16 (목)",
-    "time": "14:00~16:00",
-    "activity": "모이와야마 전망대",
-    "location": "모이와야마",
-    "transport": "로프웨이",
-    "note": "야경 맛집",
-    "map": "https://maps.app.goo.gl/UegDYVKofvA2QtoQ9"
-  },
-  {
-    "date": "7/16 (목)",
-    "time": "오후",
-    "activity": "다누키코지 & 스스키노 산책",
+    "time": "저녁",
+    "activity": "저녁 : 스프카레",
     "location": "삿포로 시내",
     "transport": "도보",
-    "note": "그리드 패턴 도시 구획",
-    "map": "https://maps.app.goo.gl/tanukikoji"
-  },
-  {
-    "date": "7/16 (목)",
-    "time": "저녁",
-    "activity": "수프 카레",
-    "location": "가라쿠 / 스아게 플러스",
-    "transport": "도보",
-    "note": "가라쿠: 다누키코지, 스아게: 스스키노",
-    "map": "https://maps.app.goo.gl/sapporo"
-  },
-  {
-    "date": "7/17 (금)",
-    "time": "오후",
-    "activity": "신치토세 공항 이동",
-    "location": "삿포로→신치토세",
-    "transport": "쾌속 에어포트 / 1,150엔",
-    "note": "약 40분",
-    "map": ""
-  },
-  {
-    "date": "7/17 (금)",
-    "time": "20:50~23:55",
-    "activity": "인천행 출발",
-    "location": "신치토세 공항 (터미널 I) → 인천 공항 (터미널 2)",
-    "transport": "대한항공 KE772 / A321-neo / 일반석(X)",
-    "note": "3시간 5분 / 체크인 18:20까지",
+    "note": "",
     "map": ""
   }
 ]

@@ -109,6 +109,24 @@
   },
   {
     "date": "7/13 (월)",
+    "time": "15:00~15:30",
+    "activity": "사과 파이 (간식)",
+    "location": "히로사키 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/13 (월)",
+    "time": "18:00~",
+    "activity": "초밥 / 이자카야 (저녁)",
+    "location": "아오모리 시내",
+    "transport": "도보",
+    "note": "",
+    "map": ""
+  },
+  {
+    "date": "7/13 (월)",
     "time": "오후",
     "activity": "쓰가루 네푸타 무라",
     "location": "히로사키 공원 인접",

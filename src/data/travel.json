@@ -262,6 +262,15 @@
   },
   {
     "date": "7/16 (목)",
+    "time": "08:00~09:00",
+    "activity": "하코다테 봉행소",
+    "location": "하코다테 봉행소",
+    "transport": "도보",
+    "note": "",
+    "map": "https://maps.app.goo.gl/Uken3MQu2fTDJdrx9"
+  },
+  {
+    "date": "7/16 (목)",
     "time": "09:15~12:41",
     "activity": "신하코다테호쿠토역 출발 → 삿포로역",
     "location": "신하코다테호쿠토역 → 삿포로역",
